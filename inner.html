@@ -21,7 +21,66 @@
           </div>
       </header>
       <main>
-      
+          <form action="#" method="get">
+              <div class="infrastructure">
+                  <h3>Инфраструктура:</h3>
+                  <label><input type="checkbox" checked>Бассейн</label>
+                  <label><input type="checkbox">Парковка</label>
+                  <label><input type="checkbox">Wi-Fi</label>
+              </div>
+              <div class="housing">
+                  <h3>Тип жилья:</h3>
+                  <label><input type="checkbox" checked>Гостиница</label>
+                  <label><input type="checkbox" checked>Мотель</label>
+                  <label><input type="checkbox" checked>Апартаменты</label>
+              </div>
+              <div class="cost">
+                  <h3>Стоимость в сутки (р):</h3>
+                  <input type="range" min="0" max="3000" step="1">
+              </div>
+              <input type="submit" name="show" value="Показать">
+          </form>
+          <div class="result">
+              <div class="overall">
+                  <h2>Найдено:3</h2>
+                  <p>Сортировка:</p>
+                  <a href="#">По цене</a>
+                  <a href="#">По типу</a>
+                  <a href="#">По рейтингу</a>
+                  <div class="arrow up"></div>
+                  <div class="arrow down"></div>
+              </div>
+              <div class="iteam-1">
+                  <img src="#" width="50" height="30" alt="amara resort & spa">
+                  <h2>Amara resort & SPA</h2>
+                  <p>Гостиница</p>
+                  <p>от 3500 р.</p>
+                  <a class="btn-1" href="#">Подробнее</a>
+                  <a class="btn-2" href="#">Забронировать</a>
+                  <img src="#" width="40" height="15" alt="four stars">
+                  <p>Рейтинг: 8,5</p>
+              </div>
+              <div class="iteam-2">
+                  <img src="#" width="50" height="30" alt="desert quail inn">
+                  <h2>Desert quail inn</h2>
+                  <p>Мотель</p>
+                  <p>от 2000 р.</p>
+                  <a class="btn-1" href="#">Подробнее</a>
+                  <a class="btn-2" href="#">Забронировать</a>
+                  <img src="#" width="40" height="15" alt="two stars">
+                  <p>Рейтинг: 8,9</p>
+              </div>
+              <div class="iteam-3">
+                  <img src="#" width="50" height="30" alt="villas at poco diablo">
+                  <h2>Villas at poco diablo</h2>
+                  <p>Апартаменты</p>
+                  <p>от 4000 р.</p>
+                  <a class="btn-1" href="#">Подробнее</a>
+                  <a class="btn-2" href="#">Забронировать</a>
+                  <img src="#" width="40" height="15" alt="three stars">
+                  <p>Рейтинг: 9,2</p>
+              </div>
+          </div>
       </main>
       <footer class="main-footer">
           <section class="visitsedona">
