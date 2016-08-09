@@ -6,9 +6,10 @@
   </head>
   <body>
       <header class="main-header">
+          <link href="css/style.css" rel="stylesheet">
           <div class="container">
               <div class="logo">
-                  <img src="#" width="40" height="30" alt="sedona">
+                  <img src="img/logo.png" width="137" height="69" alt="sedona">
               </div>
               <div class="main-manu">
                   <ul>
@@ -21,38 +22,40 @@
           </div>
       </header>
       <main>
-          <form action="#" method="get">
+          <form class="filter" action="#" method="get">
               <div class="infrastructure">
-                  <h3>Инфраструктура:</h3>
+                  <h3 class="filter-iteam">Инфраструктура:</h3>
                   <label><input type="checkbox" checked>Бассейн</label>
                   <label><input type="checkbox">Парковка</label>
                   <label><input type="checkbox">Wi-Fi</label>
               </div>
               <div class="housing">
-                  <h3>Тип жилья:</h3>
+                  <h3 class="filter-iteam">Тип жилья:</h3>
                   <label><input type="checkbox" checked>Гостиница</label>
                   <label><input type="checkbox" checked>Мотель</label>
                   <label><input type="checkbox" checked>Апартаменты</label>
               </div>
               <div class="cost">
-                  <h3>Стоимость в сутки (р):</h3>
+                  <h3 class="filter-iteam">Стоимость в сутки (р):</h3>
                   <input type="range" min="0" max="3000" step="1">
               </div>
               <button type="submit">Показать</button>
           </form>
           <div class="result">
               <div class="overall">
-                  <h2>Найдено:3</h2>
-                  <p>Сортировка:</p>
-                  <a href="#">По цене</a>
-                  <a href="#">По типу</a>
-                  <a href="#">По рейтингу</a>
+                  <h2 class="all-results">Найдено:3</h2>
+                  <div class="sorting">
+                      <p>Сортировка:</p>
+                      <a href="#">По цене</a>
+                      <a href="#">По типу</a>
+                      <a href="#">По рейтингу</a>
+                  </div>
                   <div class="arrow up"></div>
                   <div class="arrow down"></div>
               </div>
               <div class="iteam">
-                  <img src="#" width="50" height="30" alt="amara resort & spa">
-                  <h2>Amara resort & SPA</h2>
+                  <img src="img/amara%20resort%20&%20spa.png" width="135" height="90" alt="amara resort & spa">
+                  <h2 class="result-iteam">Amara resort & SPA</h2>
                   <p>Гостиница</p>
                   <p>от 3500 р.</p>
                   <a class="btn-1" href="#">Подробнее</a>
@@ -61,8 +64,8 @@
                   <p>Рейтинг: 8,5</p>
               </div>
               <div class="iteam">
-                  <img src="#" width="50" height="30" alt="desert quail inn">
-                  <h2>Desert quail inn</h2>
+                  <img src="img/desert%20quail%20inn.png" width="135" height="90" alt="desert quail inn">
+                  <h2 class="result-iteam">Desert quail inn</h2>
                   <p>Мотель</p>
                   <p>от 2000 р.</p>
                   <a class="btn-1" href="#">Подробнее</a>
@@ -71,8 +74,8 @@
                   <p>Рейтинг: 8,9</p>
               </div>
               <div class="iteam">
-                  <img src="#" width="50" height="30" alt="villas at poco diablo">
-                  <h2>Villas at poco diablo</h2>
+                  <img src="img/villas%20at%20poco%20diablo.png" width="135" height="90" alt="villas at poco diablo">
+                  <h2 class="result-iteam">Villas at poco diablo</h2>
                   <p>Апартаменты</p>
                   <p>от 4000 р.</p>
                   <a class="btn-1" href="#">Подробнее</a>
@@ -93,7 +96,7 @@
           </section>
           <section class="copyright">
               <p>Website by</p>
-              <a href="#"><img src="#" width="50" height="30" alt="HTMLAcademy"></a>
+              <a href="#"><img src="img/HTMLAcademy.gif" width="114" height="41" alt="HTMLAcademy"></a>
           </section>
       </footer>
    </body>
