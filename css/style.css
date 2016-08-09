@@ -1,0 +1,32 @@
+body {
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    font-weight: normal;
+    font-family: "PT Sans Regular";    
+}
+
+.title-text {
+    font-size: 21px;
+    line-height: 26px;
+    color: #333333;
+    font-weight: bold;
+    font-family: "PT Sans Bold";    
+}
+
+.cause {
+    font-size: 21px;
+    line-height: 21px;    
+    font-weight: bold;
+    font-family: "PT Sans Bold";    
+}
+
+.white {
+    color: #ffffff;
+}
+
+.darck {
+    color: ##333333;
+}
+
+
