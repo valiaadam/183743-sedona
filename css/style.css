@@ -13,14 +13,14 @@ body {
     line-height: 26px;
     color: #333333;
     font-weight: bold;
-    font-family: "PT Sans Bold", Georgia, Serif;    
+    font-family: "PT Sans Bold", Arial, sans-serif;    
 }
 
 .cause {
     font-size: 21px;
     line-height: 21px;    
     font-weight: bold;
-    font-family: "PT Sans Bold", Georgia, Serif;    
+    font-family: "PT Sans Bold", Arial, sans-serif;    
 }
 
 .filter-iteam {
@@ -28,7 +28,7 @@ body {
     line-height: 21px;  
     color: #ffffff;
     font-weight: bold;
-    font-family: "PT Sans Bold",Georgia, Serif;
+    font-family: "PT Sans Bold", Arial, sans-serif;
 }
 
 .white {
