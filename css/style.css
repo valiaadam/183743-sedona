@@ -1,9 +1,9 @@
 body {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 1.5;
     color: #333333;
     font-weight: normal;
-    font-family: "PT Sans Regular";    
+    font-family: "PT Sans Narrow Bold", "Trebuchet MS", Helvetica, sans-serif;    
 }
 
 .title-text,
@@ -36,7 +36,7 @@ body {
 }
 
 .darck {
-    color: ##333333;
+    color: #333333;
 }
 
 
