@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-      <header class="main-header">
-          <link href="css/style.css" rel="stylesheet">
-          <div class="container">
-              <div class="logo">
-                  <img src="img/logo.png" width="137" height="69" alt="sedona">
-              </div>
+      <div class="common-container">
+          <header class="main-header">
               <div class="main-manu">
                   <ul>
-                      <li><a href="#">Информация</a></li>
-                      <li><a href="#">Фото и видио</a></li>
-                      <li><a href="#">Карта штата</a></li>
-                      <li><a href="#">Гостиницы</a></li>
+                      <li class="main-menu-button"><a href="#">Информация</a></li>
+                      <li class="main-menu-button"><a href="#">Фото и видио</a></li>
+                      <li class="main-menu-button"><a href="#">Гостиницы</a></li>
+                      <li class="main-menu-button"><a href="#">Карта штата</a></li>
                   </ul>
               </div>
-          </div>
-      </header>
+              
+          </header>
       <main>
           <form class="filter" action="#" method="get">
               <div class="infrastructure">
@@ -41,6 +38,9 @@
               </div>
               <button type="submit">Показать</button>
           </form>
+          <div class="logo-hotels">
+                  <img src="img/logo.png" width="137" height="69" alt="sedona">
+              </div>
           <div class="result">
               <div class="overall">
                   <h2 class="all-results">Найдено:3</h2>

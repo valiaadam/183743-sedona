@@ -13,14 +13,14 @@ body {
 }
 
 .common-container {
-    background: #000000 url("../img/sedona-index-1200.jpg") no-repeat 50% 0;
+    background: #000000 url("../img/sedona-hotels-1200.jpg") no-repeat 50% 0;
     background-size: 1280px auto;
     width: 1200px;
     margin: auto;
 }
 
 .main-header {
-    min-height: 765px;
+
 }
 
 .container-background {
@@ -57,6 +57,12 @@ ul {
 .logo {
     position: relative;
     top: -56px;
+    left: 530px;
+}
+
+.logo-hotels {
+    position: relative;
+    top: -310px;
     left: 530px;
 }
 
@@ -156,7 +162,7 @@ ul {
     width: 270px;
     min-height: 120px;
     margin-right: 60px;
-    margin-left: 60px
+    margin-left: 60px;
 }
 
 .footer-social {
