@@ -151,6 +151,26 @@ ul {
     background-color: beige;
 }
 
+.footer-visitsedona {
+    float: left;
+    width: 270px;
+    min-height: 120px;
+    margin-right: 60px;
+    margin-left: 60px
+}
+
+.footer-social {
+    float: left;
+    width: 400px;
+    min-height: 120px;
+}
+
+.footer-copyright {
+    float: right;
+    width: 300px;
+    min-height: 120px;
+}
+
 .title-text,
 .all-results,
 .result-iteam {
