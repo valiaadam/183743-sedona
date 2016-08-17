@@ -1,9 +1,75 @@
+html {
+   
+}
+
 body {
+    /*min-height: 2776px;*/
     font-size: 14px;
     line-height: 1.5;
     color: #333333;
     font-weight: normal;
-    font-family: "PT Sans Narrow Bold", "Trebuchet MS", Helvetica, sans-serif;    
+    font-family: "PT Sans Narrow Bold", "Trebuchet MS", Helvetica, sans-serif;  
+    margin: 0;
+}
+
+.common-container {
+    background: #000000 url("../img/sedona-index-1200.jpg") no-repeat 50% 0;
+    background-size: 1280px auto;
+    width: 1200px;
+    margin: auto;
+}
+
+.main-header {
+    min-height: 765px;
+}
+
+.container-background {
+    /*background: #ffffff url("../img/picture.jpg") no-repeat 50%;*/
+    min-height: 765px;
+}
+
+/*.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+.main-manu {
+    background-color: white;
+}
+
+ul {
+    padding: 0;
+    font-size: 0;
+}
+
+.main-menu-button {
+    display: inline-block;
+    width: 239px;
+    height: 56px;
+    font-size: 14px;
+}
+
+.main-menu-button:nth-child(3){
+    margin-left: 244px;
+}
+
+.logo {
+    position: relative;
+    top: -56px;
+    left: 530px;
+}
+
+.form {
+    position: relative;
+    top: 368px;
+}
+
+.title {
+    position: relative;
+    top: 200px;
+    color: black;
+    text-align: center;
 }
 
 .title-text,
