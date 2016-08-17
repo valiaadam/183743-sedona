@@ -28,11 +28,11 @@ body {
     min-height: 765px;
 }
 
-/*.clearfix::after {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
-}*/
+}
 
 .main-manu {
     background-color: white;
@@ -70,6 +70,85 @@ ul {
     top: 200px;
     color: black;
     text-align: center;
+}
+
+.container {
+    font-size: 0;
+}
+
+.one {
+    font-size: 0;
+}
+
+.cause-blue1 {
+    float: left;
+    width: 400px;
+    min-height: 255px;
+    font-size: 14px;
+}
+
+.illustration1 {
+    float: right;
+    width: 800px;
+}
+
+.cause-iteams {
+    font-size: 0;
+}
+
+.square {
+    display: inline-block;
+    width: 400px;
+    min-height: 330px;  
+}
+
+.cause-2 {
+    font-size: 0;
+}
+
+.illustration2 {
+    float: left;
+    width: 800px;
+}
+
+.cause-blue2 {
+    float: right;
+    width: 400px;
+    min-height: 255px;
+}
+
+.three-four-five {
+    font-size: 0;
+}
+
+.iteam {
+    display: inline-block;
+    width: 400px;
+    min-height: 255px; 
+}
+
+.search-for-hotels {
+    font-size: 0;
+    height: 765px;
+}
+
+.text {
+    /*font-size: 14px;*/
+    min-height: 205px;
+}
+
+.button {
+    min-height: 85px;
+}
+
+.form-search {
+    position: relative;
+    top: -470px;
+    width: 566px;
+    min-height: 395px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: beige;
 }
 
 .title-text,
