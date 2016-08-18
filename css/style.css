@@ -157,11 +157,81 @@ ul {
     background-color: beige;
 }
 
+.filter {
+    min-height: 215px;
+    background: url(../img/filter.jpg) no-repeat 50%;
+}
+
+.infrastructure {
+    float: left;
+    width: 240px;
+    min-height: 215px;
+    margin-left: 72px;
+}
+
+.housing {
+    float: left;
+    width: 240px;
+    min-height: 215px;
+}
+
+.cost {
+    float: right;
+    width: 328px;
+    min-height: 130px;
+    margin-right: 72px;
+    margin-left: 200px;
+}
+
+.show {
+    float: right;
+    width: 328px;
+    min-height: 85px;
+    margin-right: 72px;
+   
+}
+
+.overall {
+    min-height: 85px;
+}
+
+.iteam {
+    min-height: 150px;
+}
+
+.all-results {
+    float: left;
+    width: 160px;
+    min-height: 85px;
+    margin-left: 72px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sorting {
+    float: left;
+    width: 448px;
+    min-height: 85px;
+}
+
+.arrow-up {
+    float: right;
+    width: 18px;
+    min-height: 85px;
+}
+
+.arrow-down {
+    float: right;
+    width: 18px;
+    min-height: 85px;
+    margin-right: 72px;
+}
+
 .footer-visitsedona {
     float: left;
     width: 270px;
     min-height: 120px;
-    margin-right: 60px;
+    margin-right: 340px;
     margin-left: 60px;
 }
 
@@ -178,8 +248,7 @@ ul {
 }
 
 .title-text,
-.all-results,
-.result-iteam {
+h2 {
     font-size: 21px;
     line-height: 26px;
     color: #333333;
