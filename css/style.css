@@ -243,10 +243,9 @@ ul {
 }
 
 .logo-container {
-    position: relative;
-    top: -806px;
-    left: 530px;
-    font-size: 0;
+    position: absolute;
+    top: 0;
+    left: 605px;
 }
 
 .footer-visitsedona {
