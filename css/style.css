@@ -7,13 +7,10 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
+    color: #000000;
     font-family: "PT Sans", "Trebuchet MS", Helvetica, sans-serif;
-    text-transform: uppercase;
-    
     
     margin: 0;
-    
-    
 }
 
 .common-container {
@@ -24,12 +21,12 @@ body {
 }
 
 .main-header {
-
+    text-transform: uppercase;
 }
 
 .container-background {
     position: relative;
-    background: skyblue url("../img/picture.jpg") no-repeat 50%;
+    background: #7ec0ee url("../img/picture.jpg") no-repeat 50%;
     min-height: 765px;
 }
 
@@ -53,11 +50,16 @@ ul {
     width: 20%;
     height: 56px;
     font-size: 14px;
+    line-height: 1.9;
 }
 
 .main-menu-button a {
+    display: block;
+    text-align: center;
+    margin-top: 14px;
     color: #000000;
     text-decoration: none;
+    font-weight: 700;
 }
 
 .main-menu-button:nth-child(-n+2){
@@ -87,16 +89,29 @@ ul {
     text-align: center;
 }
 
+.title-text {
+    margin-bottom: 30px;
+}
+
+.five-reasons {
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.container {
+    text-transform: uppercase;
+}
+
 .cause-blue1 {
     float: left;
     width: 33.33%;
-    min-height: 255px;
+    min-height: 256px;
     font-size: 14px;
 }
 
 .illustration1 {
-    float: right;
-    width: 66.66%;
+    float: left;
+    height: 256px;
 }
 
 .cause-iteams {
@@ -111,13 +126,12 @@ ul {
 
 .illustration2 {
     float: left;
-    width: 66.66%;
+    width: 66%;
 }
 
 .cause-blue2 {
     float: right;
-    width: 33.33%;
-    min-height: 255px;
+    min-height: 256px;
 }
 
 .three-four-five {
@@ -251,6 +265,10 @@ ul {
     left: 605px;
 }
 
+.main-footer {
+    text-transform: uppercase;
+}
+
 .footer-visitsedona {
     float: left;
     width: 270px;
@@ -284,6 +302,7 @@ h2 {
     font-size: 21px;
     line-height: 21px;    
     font-weight: bold;
+}
     
 
 .filter-iteam {
