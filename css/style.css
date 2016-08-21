@@ -4,16 +4,20 @@ html {
 
 body {
     /*min-height: 2776px;*/
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
-    color: #333333;
-    font-weight: normal;
-    font-family: "PT Sans Narrow Bold", "Trebuchet MS", Helvetica, sans-serif;  
+    font-family: "PT Sans", "Trebuchet MS", Helvetica, sans-serif;
+    text-transform: uppercase;
+    
+    
     margin: 0;
+    
+    
 }
 
 .common-container {
-    background: #000000 url("../img/sedona-hotels-1200.jpg") no-repeat 50% 0;
+    background: #ffffff url("../img/sedona-index-1200.jpg") no-repeat 50% 0;
     background-size: 1280px auto;
     width: 1200px;
     margin: auto;
@@ -24,7 +28,8 @@ body {
 }
 
 .container-background {
-    background: #ffffff url("../img/picture.jpg") no-repeat 50%;
+    position: relative;
+    background: skyblue url("../img/picture.jpg") no-repeat 50%;
     min-height: 765px;
 }
 
@@ -35,7 +40,7 @@ body {
 }
 
 .main-manu {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 ul {
@@ -45,51 +50,53 @@ ul {
 
 .main-menu-button {
     display: inline-block;
-    width: 239px;
+    width: 20%;
     height: 56px;
     font-size: 14px;
 }
 
-.main-menu-button:nth-child(3){
-    margin-left: 244px;
+.main-menu-button a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.main-menu-button:nth-child(-n+2){
+    float: left;
+}
+
+.main-menu-button:nth-child(n+3){
+    float: right;
 }
 
 .logo {
-    position: relative;
-    top: -56px;
-    left: 530px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .form {
     position: relative;
-    top: 368px;
+    top: 443px;
 }
 
 .title {
     position: relative;
-    top: 200px;
+    top: 280px;
     color: black;
     text-align: center;
 }
 
-.container {
-    font-size: 0;
-}
-
-.one {
-    font-size: 0;
-}
-
 .cause-blue1 {
     float: left;
-    width: 400px;
+    width: 33.33%;
     min-height: 255px;
     font-size: 14px;
 }
 
 .illustration1 {
     float: right;
-    width: 800px;
+    width: 66.66%;
 }
 
 .cause-iteams {
@@ -98,22 +105,18 @@ ul {
 
 .square {
     display: inline-block;
-    width: 400px;
+    width: 33.33%;
     min-height: 330px;  
-}
-
-.cause-2 {
-    font-size: 0;
 }
 
 .illustration2 {
     float: left;
-    width: 800px;
+    width: 66.66%;
 }
 
 .cause-blue2 {
     float: right;
-    width: 400px;
+    width: 33.33%;
     min-height: 255px;
 }
 
@@ -123,7 +126,7 @@ ul {
 
 .iteam {
     display: inline-block;
-    width: 400px;
+    width: 33.33%;
     min-height: 255px; 
 }
 
@@ -274,22 +277,21 @@ h2 {
     line-height: 26px;
     color: #333333;
     font-weight: bold;
-    font-family: "PT Sans Bold", Arial, sans-serif;    
+       
 }
 
 .cause {
     font-size: 21px;
     line-height: 21px;    
     font-weight: bold;
-    font-family: "PT Sans Bold", Arial, sans-serif;    
-}
+    
 
 .filter-iteam {
     font-size: 16px;
     line-height: 21px;  
     color: #ffffff;
     font-weight: bold;
-    font-family: "PT Sans Bold", Arial, sans-serif;
+    
 }
 
 .white {
