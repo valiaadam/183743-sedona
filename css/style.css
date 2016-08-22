@@ -100,6 +100,7 @@ ul {
 
 .container {
     text-transform: uppercase;
+    font-size: 0;
 }
 
 .cause-blue1 {
@@ -107,6 +108,20 @@ ul {
     width: 33.33%;
     min-height: 256px;
     font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cause-white {
+    font-size: 21px;
+    line-height: 1;
+    color: #ffffff;
+    padding-top: 38px;
+}
+
+.number {
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .illustration1 {
@@ -115,23 +130,52 @@ ul {
 }
 
 .cause-iteams {
-    font-size: 0;
+    font-size: 0px;
 }
 
 .square {
     display: inline-block;
     width: 33.33%;
-    min-height: 330px;  
+    min-height: 330px; 
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.picture {
+    margin-top: 57px;
+}
+
+.square h3 {
+    font-size: 21px;
+    line-height: 1;
+}
+
+.square p {
+    margin-top: 25px;
 }
 
 .illustration2 {
     float: left;
-    width: 66%;
+    width: 66.66%;
+    height: 256px;
 }
 
+
+
 .cause-blue2 {
-    float: right;
+    display: inline-block;
+    float: left;
     min-height: 256px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 49px;
+    padding-right: 49px;
+}
+
+.cause-white {
+    padding-top: 38px;
 }
 
 .three-four-five {
@@ -141,7 +185,16 @@ ul {
 .iteam {
     display: inline-block;
     width: 33.33%;
-    min-height: 255px; 
+    min-height: 256px; 
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.cause-darck {
+    font-size: 21px;
+    line-height: 1;
+    padding-top: 30px;
 }
 
 .search-for-hotels {
@@ -149,23 +202,186 @@ ul {
     height: 765px;
 }
 
+.search {
+    font-size: 0px;
+    height: 290px;
+}
+
 .text {
-    /*font-size: 14px;*/
-    min-height: 205px;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+    
+}
+
+.text-1 {
+    font-size: 30px;
+    line-height: 0.8;
+    font-weight: 700;
+    margin-top: 0;
+    padding-top: 51px;
 }
 
 .button {
-    min-height: 85px;
+    display: block;
+    width: 568px;
+    height: 55px;
+    background-color: #766357;
+    text-align: center;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+}
+
+.btn {
+    
+    font-size: 21px;
+    line-height: 1.2;
+    color: #ffffff;
+    text-decoration: none;
+    
+    
 }
 
 .form-search {
     position: relative;
     top: -470px;
-    width: 566px;
+    width: 568px;
     min-height: 395px;
     margin-left: auto;
     margin-right: auto;
-    background-color: beige;
+    background-color: #ffffff;
+}
+
+form {
+    width: 568px;    
+    text-align: center;
+    padding-top: 25px;
+    
+}
+
+.line {
+    display: inline-block;
+    width: 460px;
+    font-size: 14px;
+    line-height: 1.9;
+    font-weight: 700;
+    margin-top: 30px;
+    padding-left: 54px;
+    padding-right: 54px;
+}
+
+.person {
+    display: inline-block;
+    width: 460px;
+    font-size: 14px;
+    line-height: 1.9;
+    font-weight: 700;
+    padding-left: 54px;
+    padding-right: 54px;
+}
+
+.race input,
+.exit input{
+    float: right;
+    width: 333px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.9;
+    font-weight: 700;
+    color: #000000;
+    padding-left: 12px;
+}
+
+.race label,
+.exit label {
+    float: left;
+}
+
+.adults,
+.children {
+    display: inline-block; 
+    margin-top: 30px;
+}
+
+.adults {
+    float: left;
+    width: 230px;
+    
+   
+}
+
+.children {
+    float: right;
+    width: 182px;
+    padding-left: 48px;
+    
+}
+
+.adults input,
+.children input {
+    float: right;
+    width: 115px;
+    height: 34px;
+}
+
+.adults label,
+.children label {
+    float: left;
+}
+
+.line input,
+.adults input,
+.children input {
+    background-color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+}
+
+.line input:hover,
+.adults input:hover,
+.children input:hover {
+    background-color: #efefef;
+    border: 1px solid #efefef;
+}
+
+.line input:focus,
+.adults input:focus,
+.children input:focus {
+    background-color: #fdfdfd;
+    border: 1px solid #efefef;
+}
+
+.submit input {
+    width: 458px;
+    height: 58px;
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase; 
+    margin-top: 55px;
+    margin-bottom: 55px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    border: 1px solid #81b3d2;
+}
+
+.submit input:hover {
+    background-color: #669ec0;
+    border: 1px solid #669ec0;
+}
+ 
+.submit input:active {
+    opacity: 0.5;
+}
+
+
+
+}
+
+input {
+    background-color: #f3f3f3;
+    border: 1px solid #f3f3f3;
 }
 
 .filter {
@@ -271,23 +487,62 @@ ul {
 
 .footer-visitsedona {
     float: left;
-    width: 270px;
-    min-height: 120px;
-    margin-right: 60px;
-    margin-left: 60px;
+    width: 33.33%;
+    min-height: 80px;
+    text-align: center;
+    padding-top: 40px;
+    }
+
+.footer-visitsedona a {
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
 }
 
 .footer-social {
     float: left;
-    width: 400px;
+    width: 33.33%;
     min-height: 120px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    background-color: #93bed8;
+    margin-right: 3px;
+}
+
+.social-btn:last-child {
+    margin-right: 0;
 }
 
 .footer-copyright {
     float: right;
-    width: 300px;
+    width: 33.33%;
     min-height: 120px;
+    text-align: center;
 }
+
+.footer-copyright p {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.copyright {
+    display: inline-block;
+    padding-top: 14px;
+}
+
+.academy {
+    display: inline-block;
+    padding-top: 34px;
+}
+
 
 .title-text,
 h2 {
