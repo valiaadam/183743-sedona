@@ -92,7 +92,7 @@
                   <div class="search">
                       <div class="text">
                           <p class="text-1">Заинтересовались?</p>
-                          <p>Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                          <p>Укажите предполaгаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                       </div>
                       <div class="button">
                           <a class="btn" href="#">Поиск гостиницы в Седоне</a>
@@ -105,22 +105,26 @@
                       <form class="clearfix" action="#" method="get">
                           <div class="line race">
                               <label for="input-1">Дата заезда:</label>
-                              <input type="text" id="input-1" placeholder="24 апреля 2016">
-                              <!--<img src="#" width="10" height="10" alt="the calendar">-->
+                              <input class="input" type="text" id="input-1" placeholder="24 апреля 2016">
+                              <a href="#"><span class="icon-calendar"></span></a>
                           </div>
                           <div class="line exit">
                               <label for="input-2">Дата выезда:</label>
                               <input type="text" id="input-2" placeholder="04 июля 2016">
-                              <!--<img src="#" width="10" height="10" alt="the calendar">-->
+                              <a href="#"><span class="icon-calendar"></span></a>
                           </div>
                           <div class="person">
                               <div class="adults">
                                   <label for="input-3">Взрослые:</label>
-                                  <input type="number" id="input-3" value="2">
+                                  <button class="icon-minus"></button>
+                                  <button class="icon-plus"></button>
+                                  <input type="text" id="input-3" value="2">
                               </div>
                               <div class="children">
                                   <label for="input-4">Дети:</label>
-                                  <input type="number" id="input-4" value="0">
+                                  <button class="icon-minus"></button>
+                                  <button class="icon-plus"></button>
+                                  <input type="text" id="input-4" value="0">
                               </div>
                           </div>
                           <div class="submit">
@@ -135,22 +139,23 @@
               <a href="#">#visitsedona</a>
           </section>
           <section class="footer-social">
-              <div class="social-btn social-btn-tv">
-                  <a href="#">Twitter</a>
+              <div class="social-btn">
+                  <a href="#">Twitter<span class="icon-twitter"></span></a>
               </div>
-              <div class="social-btn social-btn-fb">
-                  <a  href="#">Facebook</a>
+              <div class="social-btn">
+                  <a  href="#">Facebook<span class="icon-facebook"></span></a>
               </div>
-              <div class="social-btn social-btn-yt">
-                  <a class="social-btn social-btn-yt" href="#">Youtube</a>
+              <div class="social-btn">
+                  <a class="social-btn social-btn-yt" href="#">Youtube<span class="icon-youtube"></span></a>
               </div>
+              
           </section>
           <section class="footer-copyright">
               <div class="copyright">
                   <p>Website by</p>
               </div>
               <div class="academy">
-                  <a href="#"><img src="img/htmlacademy.gif" width="114" height="41" alt="HTMLAcademy"></a>
+                  <a href=""></a>
               </div>
           </section>
       </footer>

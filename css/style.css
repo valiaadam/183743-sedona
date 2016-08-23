@@ -7,18 +7,64 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
+    background-color: #efefef;
     color: #000000;
     font-family: "PT Sans", "Trebuchet MS", Helvetica, sans-serif;
     
     margin: 0;
 }
 
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+
+
 .common-container {
-    background: #ffffff url("../img/sedona-index-1200.jpg") no-repeat 50% 0;
+    /*background: #ffffff url("../img/sedona-index-1200.jpg") no-repeat 50% 0;*/
     background-size: 1280px auto;
     width: 1200px;
     margin: auto;
+    box-shadow: 10px 0 20px -1px #dad5d5,
+                -10px 0 20px -1px #dad5d5;
+    background-color: #ffffff;
 }
+
 
 .main-header {
     text-transform: uppercase;
@@ -47,6 +93,7 @@ ul {
 
 .main-menu-button {
     display: inline-block;
+    vertical-align: top;
     width: 20%;
     height: 56px;
     font-size: 14px;
@@ -96,6 +143,7 @@ ul {
 .five-reasons {
     font-size: 14px;
     line-height: 1.9;
+    color: #333333;
 }
 
 .container {
@@ -108,6 +156,7 @@ ul {
     width: 33.33%;
     min-height: 256px;
     font-size: 14px;
+    background-color: #81b3d2;
     color: #ffffff;
     text-align: center;
 }
@@ -131,15 +180,18 @@ ul {
 
 .cause-iteams {
     font-size: 0px;
+
 }
 
 .square {
     display: inline-block;
+    vertical-align: top;
     width: 33.33%;
     min-height: 330px; 
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
+    
 }
 
 .picture {
@@ -165,9 +217,11 @@ ul {
 
 .cause-blue2 {
     display: inline-block;
+    vertical-align: top;
     float: left;
     min-height: 256px;
     font-size: 14px;
+    background-color: #81b3d2;
     color: #ffffff;
     text-align: center;
     padding-left: 49px;
@@ -180,10 +234,12 @@ ul {
 
 .three-four-five {
     font-size: 0;
+    background-color: #eeeeee;
 }
 
 .iteam {
     display: inline-block;
+    vertical-align: top;
     width: 33.33%;
     min-height: 256px; 
     font-size: 14px;
@@ -252,6 +308,8 @@ ul {
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
+    box-shadow: 5px 5px 20px -5px #c1c3c4,
+                -5px 0 20px -5px #c1c3c4;
 }
 
 form {
@@ -263,6 +321,7 @@ form {
 
 .line {
     display: inline-block;
+    vertical-align: top;
     width: 460px;
     font-size: 14px;
     line-height: 1.9;
@@ -274,6 +333,7 @@ form {
 
 .person {
     display: inline-block;
+    vertical-align: top;
     width: 460px;
     font-size: 14px;
     line-height: 1.9;
@@ -299,9 +359,40 @@ form {
     float: left;
 }
 
+.race .icon-calendar {
+    position: absolute;
+    top: 55px;
+    left: 480px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    color: #c2c2c2;
+}
+
+.exit .icon-calendar {
+    position: absolute;
+    top: 123px;
+    left: 480px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    color: #c2c2c2;
+}
+
+.race .icon-calendar:hover,
+.exit .icon-calendar:hover {
+    color: #000000;
+}
+
+.race .icon-calendar:active,
+.exit .icon-calendar:active {
+    color: #81b3d2;
+}
+
 .adults,
 .children {
-    display: inline-block; 
+    display: inline-block;
+    vertical-align: top;
     margin-top: 30px;
 }
 
@@ -324,11 +415,57 @@ form {
     float: right;
     width: 115px;
     height: 34px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
 }
 
 .adults label,
 .children label {
     float: left;
+    
+}
+
+.icon-plus,
+.icon-minus {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: 0;
+    background-color: #f4f4f4;
+    color: #c2c2c2;
+}
+.adults .icon-minus {
+    top: 191px;
+    left: 168px;
+}
+
+.adults .icon-plus {
+    top: 191px;
+    left: 245px;
+}
+
+.children .icon-minus {
+    top: 191px;
+    left: 397px;
+}
+
+.children .icon-plus {
+    top: 191px;
+    left: 475px;
+}
+
+.icon-plus:hover,
+.icon-minus:hover {
+    background-color: #efefef;
+    color: #000000;
+}
+
+.icon-plus:active,
+.icon-minus:active {
+    background-color: #fdfdfd;
+    color: #81b3d2;
 }
 
 .line input,
@@ -504,45 +641,69 @@ input {
 .footer-social {
     float: left;
     width: 33.33%;
-    min-height: 120px;
+    min-height: 90px;
     text-align: center;
     padding-top: 30px;
 }
 
 .social-btn {
     display: inline-block;
+    vertical-align: top;
     width: 46px;
     height: 48px;
-    background-color: #93bed8;
+    font-size: 0;
+    background-color: #81b3d2;
     margin-right: 3px;
+    text-align: center;
+}
+
+.social-btn:hover {
+    background-color: #669ec0;
+}
+
+.social-btn:active span{
+    opacity: 0.5;
 }
 
 .social-btn:last-child {
     margin-right: 0;
 }
 
+.social-btn span {
+    font-size: 30px;
+    color: #ffffff;
+}
+
 .footer-copyright {
     float: right;
     width: 33.33%;
-    min-height: 120px;
+    min-height: 91px;
     text-align: center;
-}
-
-.footer-copyright p {
-    display: inline-block;
-    margin-right: 5px;
+    padding-top: 29px;
 }
 
 .copyright {
     display: inline-block;
-    padding-top: 14px;
+    vertical-align: top;
+    margin-right: 5px;
 }
 
 .academy {
     display: inline-block;
-    padding-top: 34px;
+    vertical-align: top;
+    margin-top: 5px;
+    width: 113px;
+    height: 39px;
+    background-image: url("../img/htmlacademy.gif");
+}
+ 
+.academy:hover {
+    background-image: url("../img/htmlacademy-hvr.png");
 }
 
+.academy:active {
+    background-image: url("../img/htmlacademy-down.png");
+}
 
 .title-text,
 h2 {
