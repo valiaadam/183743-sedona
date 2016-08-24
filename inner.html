@@ -14,14 +14,14 @@
                   <ul class="clearfix">
                       <li class="main-menu-button"><a href="#">Информация</a></li>
                       <li class="main-menu-button"><a href="#">Фото и видио</a></li>
-                      <li class="main-menu-button"><a href="#">Гостиницы</a></li>
+                      <li class="main-menu-button main-menu-button-active"><a href="#">Гостиницы</a></li>
                       <li class="main-menu-button"><a href="#">Карта штата</a></li>
                   </ul>
               </div>
           </header>
       <main>
           <div class="main-container">
-          <form class="filter" action="#" method="get">
+          <form class="filter clearfix" action="#" method="get">
               <div class="infrastructure">
                   <h3 class="filter-iteams">Инфраструктура:</h3>
                   <ul>
@@ -59,23 +59,22 @@
               <div class="cost">
                   <h3 class="filter-iteams">Стоимость в сутки (р):</h3>
                   <div class="price">
-                      <label class="min-price">от<input type="text" name="min-price" value="0"></label>
-                      <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
+                      <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                      <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                   </div>
                   <div class="range">
-                      <div class="range">
+                      <div class="scale">
                           <div class="bar"></div>
                       </div>
                       <div class="range-toggle range-toggle-min"></div>
                       <div class="range-toggle range-toggle-max"></div>
                   </div>
-                  <button class="btn-show" type="submit">Показать</button>
+              </div>
+              <div class="button-form">
+                  <input class="btn-show" type="submit" name="show" value="Показать">
               </div>
           </form>
-          <!--
-          <div class="logo-hotels">
-                  <img src="img/logo.png" width="137" height="69" alt="sedona">
-          </div>-->
+       
           <div class="result">
               <div class="overall">
                   <div class="all-results">
@@ -146,7 +145,7 @@
           </div>
           <div class="logo-container">
               <div class="logo-hotels">
-                  <img src="img/logo.png" width="137" height="69" alt="sedona">
+                  <a href="#"><img src="img/logo.png" width="137" height="69" alt="sedona"></a>
               </div>
           </div>
       </main>
