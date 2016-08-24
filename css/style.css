@@ -542,7 +542,7 @@ input {
 .filter {
     width: 100%;
     padding-top: 10px;
-    /*background: url(../img/filter.jpg) no-repeat 50%;*/
+    background: url(../img/filter.jpg) no-repeat 50%;
 }
 
 
@@ -748,7 +748,124 @@ input[type="checkbox"]:checked + label::before:disabled {
 
 
 .overall {
-    min-height: 85px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.all-results {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    width: 164px;
+    min-height: 87px;
+    margin-left: 72px;
+    
+}
+
+.all-results h2 {
+    padding-top: 13px;
+}
+
+.sorting {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    width: 448px;
+    min-height: 87px;
+}
+
+.sorting h4,
+.sorting ul,
+.sorting-iteam {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sorting h4 {
+    margin-top: 16px;
+    padding-top: 20px;
+}
+
+.sorting ul {
+    
+    margin-top: 16px;
+    padding-top: 20px;
+}
+
+.sorting-iteam {
+    width: auto;
+    text-align: center;
+    padding-right: 35px;
+}
+
+.sorting-iteam:first-child {
+    padding-left: 35px;
+}
+
+.sorting-iteam a {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 1px dotted #000000;
+    opacity: 0.3;
+}
+
+.sorting-iteam .active-sorting-iteam {
+    color: #81b3d2;
+    border-bottom: none;
+}
+
+.sorting-iteam a:hover {
+    color: #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-iteam a:focus {
+    color: #000000;
+    border-bottom: none;
+}
+
+.icon-up-dir,
+.icon-down-dir {
+    font-size: 23px;
+    color: #cccccc;
+}
+
+.icon-dir-active {
+    color: #81b3d2;
+}
+
+.icon-up-dir:hover,
+.icon-down-dir:hover {
+    color: #000000;
+}
+
+.icon-up-dir:active,
+.icon-down-dir:active {
+    color: #81b3d2;
+}
+
+
+.arrow-up {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    width: 22px;
+    padding-top: 27px;
+}
+
+.arrow-down {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 72px;
+    float: right;
+    width: 22px;
+    padding-top: 27px;
 }
 
 .iteam-hotel {
@@ -756,33 +873,7 @@ input[type="checkbox"]:checked + label::before:disabled {
     font-size: 0;
 }
 
-.all-results {
-    float: left;
-    width: 160px;
-    min-height: 85px;
-    margin-left: 72px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
-.sorting {
-    float: left;
-    width: 448px;
-    min-height: 85px;
-}
-
-.arrow-up {
-    float: right;
-    width: 18px;
-    min-height: 85px;
-}
-
-.arrow-down {
-    float: right;
-    width: 18px;
-    min-height: 85px;
-    margin-right: 72px;
-}
 
 .img {
     float: left;
