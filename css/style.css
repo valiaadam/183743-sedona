@@ -118,15 +118,15 @@ ul {
     opacity: 0.3;
 }
 
-main-menu-button-active a {
+.main-menu-button-active a {
     color: #766357;
 }
 
-main-menu-button-active a:hover {
+.main-menu-button-active a:hover {
     color: #604e43;
 }
 
-main-menu-button-active a:focus {
+.main-menu-button-active a:focus {
     color: #766357;
     opacity: 0.3;
 }
@@ -323,8 +323,8 @@ main-menu-button-active a:focus {
 }
 
 .form-search {
+    display: none;
     position: relative;
-    top: -470px;
     width: 568px;
     min-height: 395px;
     margin-left: auto;
@@ -332,6 +332,27 @@ main-menu-button-active a:focus {
     background-color: #ffffff;
     box-shadow: 5px 5px 20px -5px #c1c3c4,
                 -5px 0 20px -5px #c1c3c4;
+}
+
+.form-search-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 1s;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 form {
@@ -532,11 +553,6 @@ form {
  
 .submit input:focus {
     opacity: 0.5;
-}
-
-input {
-    background-color: #f3f3f3;
-    border: 1px solid #f3f3f3;
 }
 
 .filter {
@@ -811,9 +827,9 @@ input[type="checkbox"]:checked + label::before:disabled {
     line-height: 1.5;
     font-weight: 400;
     text-decoration: none;
-    color: #000000;
+    color: #b6aca5;
     border-bottom: 1px dotted #000000;
-    opacity: 0.3;
+    
 }
 
 .sorting-iteam .active-sorting-iteam {
@@ -913,7 +929,8 @@ input[type="checkbox"]:checked + label::before:disabled {
     color: #81b3d2;
 }
 
-.result-iteam:focus {
+.result-iteam:focus,
+.result-iteam:active {
     opacity: 0.3;
 }
 
@@ -939,7 +956,7 @@ input[type="checkbox"]:checked + label::before:disabled {
     line-height: 1.5;
     font-weight: 700;
     color: #ffffff;
-    background: #c0d9e8;
+    background: #81b3d2;
     text-decoration: none;
     text-transform: uppercase;
     padding: 3px 17px;
@@ -947,11 +964,11 @@ input[type="checkbox"]:checked + label::before:disabled {
 }
 
 .btn-1:hover {
-    background: #8bbfde;
+    background: #599cc5;
 }
 
 .btn-1:active {
-    background: #56ade2;
+    background: #599cc5;
     color: #9cc0d6;
 }
 
@@ -962,7 +979,7 @@ input[type="checkbox"]:checked + label::before:disabled {
     line-height: 1.5;
     font-weight: 700;
     color: #ffffff;
-    background: #cac2be;
+    background: #736257;
     text-decoration: none;
     text-transform: uppercase;
     padding: 3px 17px;
@@ -970,11 +987,11 @@ input[type="checkbox"]:checked + label::before:disabled {
 }
 
 .btn-2:hover {
-    background: #b4aca7;
+    background: #56483f;
 }
 
 .btn-2:active {
-    background: #807974;
+    background: #56483f;
     color: #bbb0ac;
 }
 
@@ -1081,8 +1098,8 @@ input[type="checkbox"]:checked + label::before:disabled {
     background-color: #669ec0;
 }
 
-.social-btn:focus span{
-    opacity: 0.5;
+.social-btn:focus span {
+    color: #b5d2e2;
 }
 
 .social-btn:last-child {
@@ -1090,8 +1107,15 @@ input[type="checkbox"]:checked + label::before:disabled {
 }
 
 .social-btn span {
+    width: 46px;
+    height: 48px;
     font-size: 30px;
     color: #ffffff;
+}
+
+.social-btn a {
+    width: 46px;
+    height: 48px;
 }
 
 .footer-copyright {

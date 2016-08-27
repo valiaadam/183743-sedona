@@ -97,11 +97,7 @@
                       <div class="button">
                           <a class="btn" href="#">Поиск гостиницы в Седоне</a>
                       </div>
-                  </div>
-                  <div class="map">
-                      <img src="img/map-sedona.jpg" width="1200" height="470" alt="Map Sedona">
-                  </div>
-                  <div class="form-search">
+                      <div class="form-search">
                       <form class="clearfix" action="#" method="get">
                           <div class="line race">
                               <label for="input-1">Дата заезда:</label>
@@ -131,7 +127,12 @@
                               <input type="submit" name="Search" value="Найти">
                           </div>
                       </form>
+                      </div>
                   </div>
+                  <div class="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838086.1047998945!2d-112.33879075842542!3d34.861909447055574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1472212010220" width="1200" height="470" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                  
               </div>
           </main>
       <footer class="main-footer clearfix">
@@ -140,10 +141,10 @@
           </section>
           <section class="footer-social">
               <div class="social-btn">
-                  <a href="#">Twitter<span class="icon-twitter"></span></a>
+                  <a class="social-btn social-btn-v" href="#">Twitter<span class="icon-twitter"></span></a>
               </div>
               <div class="social-btn">
-                  <a  href="#">Facebook<span class="icon-facebook"></span></a>
+                  <a class="social-btn social-btn-f" href="#">Facebook<span class="icon-facebook"></span></a>
               </div>
               <div class="social-btn">
                   <a class="social-btn social-btn-yt" href="#">Youtube<span class="icon-youtube"></span></a>
@@ -160,5 +161,15 @@
           </section>
       </footer>
       </div>
+      <script>
+          var link = document.querySelector(".button");
+          var popup = document.querySelector(".form-search");
+
+          
+          link.addEventListener("click", function(event) {
+              event.preventDefault();
+              popup.classList.toggle("form-search-show");
+      });
+      </script>
    </body>
 </html>
