@@ -67,6 +67,8 @@ body {
 
 
 .main-header {
+    position: relative;
+    z-index: 1;
     text-transform: uppercase;
 }
 
@@ -173,6 +175,12 @@ ul {
     font-size: 0;
 }
 
+.cause-1,
+.cause-2 {
+    position: relative;
+    z-index: 1;
+}
+
 .cause-blue1 {
     float: left;
     width: 33.33%;
@@ -255,6 +263,8 @@ ul {
 }
 
 .three-four-five {
+    position: relative;
+    z-index: 1;
     font-size: 0;
     background-color: #eeeeee;
 }
@@ -276,8 +286,10 @@ ul {
 }
 
 .search-for-hotels {
+    position: relative;
     font-size: 0;
-    height: 765px;
+    z-index: 1;
+    background: #ffffff;
 }
 
 .search {
@@ -324,7 +336,9 @@ ul {
 
 .form-search {
     display: none;
-    position: relative;
+    position: absolute;
+    top: 2162px;
+    left: 391px;
     width: 568px;
     min-height: 395px;
     margin-left: auto;
@@ -353,6 +367,10 @@ ul {
   100% {
     transform: translateY(0);
   }
+}
+
+.container-form-search {
+    z-index: 2;
 }
 
 form {
@@ -554,6 +572,8 @@ form {
 .submit input:focus {
     opacity: 0.5;
 }
+
+
 
 .filter {
     width: 100%;
@@ -1051,6 +1071,7 @@ input[type="checkbox"]:checked + label::before:disabled {
     
 .logo-container {
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 605px;
 }
