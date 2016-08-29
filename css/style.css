@@ -56,6 +56,7 @@ body {
 
 
 .common-container {
+    position: relative;
     /*background: #ffffff url("../img/sedona-hotels-1200.jpg") no-repeat 50% 0;*/
     background-size: 1280px auto;
     width: 1200px;
@@ -1077,7 +1078,13 @@ input[type="checkbox"]:checked + label::before:disabled {
 }
 
 .main-footer {
-    text-transform: uppercase;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  height: 120px;
+  background: rgba(255,255,255,0.8);
 }
 
 .footer-visitsedona {
