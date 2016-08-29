@@ -1157,16 +1157,20 @@ input[type="checkbox"]:checked + label::before:disabled {
     display: inline-block;
     vertical-align: top;
     margin-top: 5px;
+    background: url("../img/htmlacademy.png") no-repeat;
+}
+
+.academy a {
+    display: inline-block;
     width: 113px;
     height: 39px;
-    background-image: url("../img/htmlacademy.gif");
 }
  
 .academy:hover {
     background-image: url("../img/htmlacademy-hvr.png");
 }
 
-.academy:focus {
+.academy:active {
     background-image: url("../img/htmlacademy-down.png");
 }
 
