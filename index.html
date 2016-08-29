@@ -104,12 +104,12 @@
                       <form class="clearfix" action="#" method="get">
                           <div class="line race">
                               <label for="input-1">Дата заезда:</label>
-                              <input class="input" type="text" id="input-1" name="race" placeholder="24 апреля 2016">
+                              <input class="input" type="text" id="input-1" name="race" placeholder="24 апреля 2016" required>
                               <a href="#"><span class="icon-calendar"></span></a>
                           </div>
                           <div class="line exit">
                               <label for="input-2">Дата выезда:</label>
-                              <input type="text" id="input-2" name="exit" placeholder="04 июля 2016">
+                              <input type="text" id="input-2" name="exit" placeholder="04 июля 2016" required>
                               <a href="#"><span class="icon-calendar"></span></a>
                           </div>
                           <div class="person">
@@ -117,7 +117,7 @@
                                   <label for="input-3">Взрослые:</label>
                                   <button class="icon-minus"></button>
                                   <button class="icon-plus"></button>
-                                  <input type="text" id="input-3" value="2">
+                                  <input type="text" id="input-3" value="2" required>
                               </div>
                               <div class="children">
                                   <label for="input-4">Дети:</label>
@@ -168,12 +168,10 @@
           var link = document.querySelector(".button");
           var popup = document.querySelector(".form-search");
           var form = popup.querySelector("form");
-         
                     
           link.addEventListener("click", function(event) {
               event.preventDefault();
               popup.classList.toggle("form-search-show");
-              
           });
               
                     
