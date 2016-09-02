@@ -355,6 +355,7 @@ ul {
 }
 form {
     width: 568px;
+    min-height: 371px;
     text-align: center;
     padding-top: 24px;
 }
@@ -521,7 +522,6 @@ form {
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 55px;
-    margin-bottom: 54px;
     background-color: #81b3d2;
     color: #ffffff;
     border: 1px solid #81b3d2;
@@ -535,6 +535,7 @@ form {
 }
 .filter {
     width: 100%;
+    min-height: 206px;
     padding-top: 10px;
     background: #7ec0ee url(../img/filter.jpg) no-repeat 50% 10%;
 }
@@ -588,7 +589,7 @@ input[type="checkbox"]:checked + label::before {
 input[type="checkbox"] + label::before:disabled {
     color: #6a6a6a;
 }
-input[type="checkbox"]:checked + label::before:disabled {
+input[type="checkbox"]:disabled + label::before {
     color: #6a6a6a;
 }
 .housing {
@@ -688,7 +689,7 @@ input[type="checkbox"]:checked + label::before:disabled {
     vertical-align: top;
     float: right;
     width: 328px;
-    min-height: 69px;
+    min-height: 36px;
     margin-right: 72px;
     margin-left: 200px;
     font-size: 16px;
@@ -923,7 +924,8 @@ input[type="checkbox"]:checked + label::before:disabled {
     float: right;
     margin-top: 23px;
 }
-.star {
+.icon-star {
+    color: #81b3d2;
     float: right;
     width: 21px;
     height: 20px;
@@ -931,11 +933,8 @@ input[type="checkbox"]:checked + label::before:disabled {
     padding-right: 1px;
     padding-left: 1px;
 }
-.star:last-child {
+.icon-star:first-child {
     padding-right: 0;
-}
-.icon-star {
-    color: #81b3d2;
 }
 .evaluation p {
     display: block;
@@ -1029,6 +1028,7 @@ input[type="checkbox"]:checked + label::before:disabled {
 .social-btn a {
     width: 46px;
     height: 37px;
+    text-decoration: none;
 }
 .footer-copyright {
     float: right;
