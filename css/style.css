@@ -88,8 +88,7 @@ html {} body {
 
 .common-container {
     position: relative;
-    /*background: #ffffff url("../img/sedona-index-1200.jpg") no-repeat 50% 0;*/
-    
+    /*background: #ffffff url("../img/sedona-inner-1200.jpg") no-repeat 50% 0;*/
     background-size: 1280px auto;
     width: 1200px;
     margin: auto;
@@ -190,12 +189,17 @@ ul {
     position: relative;
     z-index: 2;
 }
+.one {
+    background-color: #81b3d2;
+}
+.cause-2 {
+    background-color: #81b3d2;
+}
 .cause-blue1 {
     float: left;
     width: 33.33%;
     min-height: 256px;
     font-size: 14px;
-    background-color: #81b3d2;
     color: #ffffff;
     text-align: center;
 }
@@ -210,7 +214,7 @@ ul {
     margin-bottom: 20px;
 }
 .illustration1 {
-    float: left;
+    float: right;
     height: 256px;
 }
 .cause-iteams {
@@ -816,6 +820,10 @@ input[type="checkbox"]:disabled + label::before {
     width: 22px;
     padding-top: 27px;
 }
+.arrow-up a,
+.arrow-down a{
+    text-decoration: none;
+}
 .iteam-hotel {
     font-size: 0;
     border-bottom: 1px solid #e4e0e0;
@@ -1004,8 +1012,8 @@ input[type="checkbox"]:disabled + label::before {
     padding-top: 3px;
 }
 .social-btn:nth-child(3) {
-    height: 48px;
-    padding-top: 0;
+    height: 46px;
+    padding-top: 2px;
 }
 .social-btn:hover {
     background-color: #669ec0;
