@@ -164,7 +164,7 @@ ul {
 }
 .form {
     position: relative;
-    top: 443px;
+    top: 450px;
 }
 .title {
     position: relative;
@@ -231,11 +231,17 @@ ul {
     text-align: center;
 }
 .picture {
+    margin-top: 60px;
+}
+.square:nth-child(3) .picture {
     margin-top: 57px;
 }
 .square h3 {
     font-size: 21px;
     line-height: 1;
+}
+.square:nth-child(2) h3 {
+    margin-top: 25px;
 }
 .square p {
     margin-top: 25px;
@@ -299,22 +305,23 @@ ul {
     line-height: 0.8;
     font-weight: 700;
     margin-top: 0;
-    padding-top: 51px;
+    padding-top: 56px;
 }
 .button {
     display: block;
     width: 568px;
-    height: 62px;
+    height: 55px;
     background-color: #766357;
     text-align: center;
     padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 45px;
+    margin-top: 47px;
 }
 .btn {
     font-size: 21px;
     line-height: 1.2;
+    font-weight: 700;
     color: #ffffff;
     text-decoration: none;
 }
@@ -394,6 +401,7 @@ form {
     font-weight: 700;
     color: #000000;
     padding-left: 12px;
+    text-transform: uppercase;
 }
 .race label,
 .exit label {
